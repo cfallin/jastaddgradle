@@ -292,7 +292,7 @@ class JastAddExtension {
           outdir.mkdirs()
         }
         def inputFile = project.file("${project.preprocessParser.temporaryDir}/${parser.name}.beaver")
-        args ([ '-d', outdir.path, '-t', '-c', '-w', inputFile.path ])
+        args ([ '-d', outdir.path, '-t', '-c', inputFile.path ])
       }
     }
 
